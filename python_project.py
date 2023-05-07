@@ -1571,14 +1571,29 @@ def stu_login():
 
 
 def front():
-  col1, col2 = st.columns([1,6])
-  with col1:
-    pass
+  st.markdown("""
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>College Bus Management App</title>
+        </head>
+        <body>
 
-  with col2:
-    st.markdown('<h3 style="text-align:center;">PSG Institute of Technology and Applied Research</h3>', unsafe_allow_html=True)
-    st.markdown('<p style="text-align:center;":>Neelambur,Coimbatore-641062</p>',unsafe_allow_html=True)
-    st.markdown("__________________________________________________________________________________")
+            <header>
+                <img src="Itechlogo.png" alt="PSG Institute of Technology and Applied Research logo" style="float:left;width:100px;height:100px;">
+                <h1 style="display:inline-block;margin-left:10px;">PSG Institute of Technology and Applied Research</h1>
+                <br>
+                <p style="font-size:14px;margin-top:0;margin-bottom:0;">Neelambur, Coimbatore-641062</p>
+            </header>
+
+            <footer>
+                <img src="bus.png" alt="Bus Image" style="float:right;width:100px;height:100px;">
+            </footer>
+
+        </body>
+        </html>
+    """, unsafe_allow_html=True)
+
     
 
 
