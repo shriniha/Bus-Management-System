@@ -1190,7 +1190,7 @@ def feedback_adm():
 
 def admin_login():
 
-        st.subheader('Admin')
+        st.subheader('Admin',align='centre')
 
         #load user authentication admin
 
