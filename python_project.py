@@ -1571,13 +1571,11 @@ def stu_login():
 
 
 def front():
-        
-        logo1_path = "C:/Users/admin/OneDrive/Desktop/pspp project/Itechlogo - Copy.png"
+       
 
-        logo1=Image.open(logo1_path)
+        logo1=Image.open("Itechlogo - Copy.png")
  
-        bus_path="C:\Users\admin\OneDrive\Desktop\pspp project\bus.png"
-        bus=Image.open(bus_path)
+        bus=Image.open("bus.png")
         col1, col2 = st.columns([1,6])
 
         with col1:
