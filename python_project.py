@@ -1572,7 +1572,8 @@ def stu_login():
 
 def front():
         
-        logo1_path = "C:\Users\admin\OneDrive\Desktop\pspp project\Itechlogo - Copy.png"
+        logo1_path = "C:/Users/admin/OneDrive/Desktop/pspp project/Itechlogo - Copy.png"
+
         logo1=Image.open(logo1_path)
  
         bus_path="C:\Users\admin\OneDrive\Desktop\pspp project\bus.png"
