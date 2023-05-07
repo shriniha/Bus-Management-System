@@ -2,7 +2,6 @@ import streamlit as st
 
 st.set_page_config(layout="wide")
 
-import cv2
 import streamlit_authenticator as stauth
 import matplotlib.pyplot as plt
 import stu_database as db_stu
@@ -1573,10 +1572,11 @@ def stu_login():
 
 def front():
         
-        logo1 = cv2.imread('Itechlogo.png')
-        logo1=cv2.cvtColor(logo1, cv2.COLOR_BGR2RGB)
-        bus=cv2.imread('bus.png')
-        bus=cv2.cvtColor(bus, cv2.COLOR_BGR2RGB)
+        logo1_path = "C:\Users\admin\OneDrive\Desktop\pspp project\Itechlogo - Copy.png"
+        logo1=Image.open(logo1_path)
+ 
+        bus_path="C:\Users\admin\OneDrive\Desktop\pspp project\bus.png"
+        bus=Image.open(bus_path)
         col1, col2 = st.columns([1,6])
 
         with col1:
