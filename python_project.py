@@ -1571,20 +1571,14 @@ def stu_login():
 
 
 def front():
-       
+  bus_path="C:\Users\admin\OneDrive\Desktop\pspp project\bus.png"
+  bus=Image.open(bus_path)
+  col1, col2 = st.columns([1,6])
 
-        logo1=Image.open("Itechlogo - Copy.png")
- 
-        bus=Image.open("bus.png")
-        col1, col2 = st.columns([1,6])
-
-        with col1:
-                st.image(logo1,caption=None, width=70, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-
-        with col2:
-                st.markdown('<h3 style="text-align:center;">PSG Institute of Technology and Applied Research</h3>', unsafe_allow_html=True)
-                st.markdown('<p style="text-align:center;":>Neelambur,Coimbatore-641062</p>',unsafe_allow_html=True)
-                st.markdown("__________________________________________________________________________________")
+  with col2:
+    st.markdown('<h3 style="text-align:center;">PSG Institute of Technology and Applied Research</h3>', unsafe_allow_html=True)
+    st.markdown('<p style="text-align:center;":>Neelambur,Coimbatore-641062</p>',unsafe_allow_html=True)
+    st.markdown("__________________________________________________________________________________")
         st.image(bus,width=1000)
 
 
