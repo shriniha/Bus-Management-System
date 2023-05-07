@@ -1571,7 +1571,7 @@ def stu_login():
 
 
 def front():
-  st.markdown("""
+  html_code="""
         <!DOCTYPE html>
         <html>
         <head>
@@ -1592,7 +1592,8 @@ def front():
 
         </body>
         </html>
-    """, unsafe_allow_html=True)
+    """
+  st.markdown(htmlcode,unsafe_allow_html=True)
 
     
 
