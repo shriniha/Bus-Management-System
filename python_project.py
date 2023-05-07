@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(layout="wide")
 
-import cv2
+
 import streamlit_authenticator as stauth
 import matplotlib.pyplot as plt
 import stu_database as db_stu
