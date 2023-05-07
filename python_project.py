@@ -1593,7 +1593,7 @@ def front():
         </body>
         </html>
     """
-  st.markdown(html_code,unsafe_allow_html=True)
+  st.write(html_code,unsafe_allow_html=True)
 
     
 
